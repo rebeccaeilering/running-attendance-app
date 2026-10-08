@@ -53,6 +53,23 @@
       <p id="manual-checkin-message"></p>
 
       <h3>Attendance</h3>
+
+      <div class="download-controls">
+        <div class="download-date-control">
+          <label for="download-date">Training Date</label>
+
+          <select id="download-date">
+            <option value="all">All Training Dates</option>
+          </select>
+        </div>
+
+        <button id="download-button" type="button">
+          Download CSV
+        </button>
+      </div>
+
+      <p id="download-message" role="status"></p>
+
       <p id="attendance-message">Loading attendance...</p>
       <ul id="attendance-list"></ul>
 

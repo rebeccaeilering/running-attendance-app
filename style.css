@@ -89,3 +89,42 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.download-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0 16px;
+  flex-wrap: wrap;
+}
+
+.download-date-control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+}
+
+.download-date-control label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#download-date {
+  min-width: 190px;
+  padding: 13px 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  background: white;
+  font-size: 1rem;
+}
+
+#download-button {
+  margin: 0;
+  white-space: nowrap;
+}
+
+#download-message {
+  margin: 0 0 12px;
+}
+
