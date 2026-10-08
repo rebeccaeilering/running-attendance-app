@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frost Toes Leader Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Frost Toes</h1>
+    <h2>Leader Dashboard</h2>
+
+    <p id="dashboard-message" role="status">
+      Leader access has not been verified.
+    </p>
+
+    <section id="dashboard-content" hidden>
+
+      <h3>Manual Check-In</h3>
+
+      <form id="manual-checkin-form">
+        <label for="manual-first-name">First Name</label>
+        <input
+          type="text"
+          id="manual-first-name"
+          maxlength="100"
+          required
+        >
+
+        <label for="manual-last-name">Last Name</label>
+        <input
+          type="text"
+          id="manual-last-name"
+          maxlength="100"
+          required
+        >
+
+        <label for="manual-session-date">Training Date</label>
+        <input
+          type="date"
+          id="manual-session-date"
+          min="2026-09-30"
+          max="2026-12-05"
+          required
+        >
+
+        <button type="submit" disabled>
+          Add Runner
+        </button>
+      </form>
+
+      <p id="manual-checkin-message"></p>
+
+      <h3>Attendance</h3>
+      <p id="attendance-message">Loading attendance...</p>
+      <ul id="attendance-list"></ul>
+
+      <h3>Possible Duplicates</h3>
+      <p id="duplicates-message">Loading possible duplicates...</p>
+      <ul id="duplicates-list"></ul>
+
+    </section>
+
+    <button id="logout-button" type="button" hidden>
+      Sign Out
+    </button>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="leader-dashboard.js"></script>
+</body>
+</html>

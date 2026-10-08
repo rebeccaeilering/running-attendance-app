@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frost Toes Check-In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+    <h1>Frost Toes</h1>
+    <h2>Training Check-In</h2>
+
+    <p>Welcome! Please check in before your run.</p>
+    <p id="training-date"></p>
+
+    <form id="checkin-form">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        required
+      >
+
+      <label for="lastName">Last Name</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        required
+      >
+
+      <label for="checkinPin">Workout PIN</label>
+      <input
+        type="password"
+        id="checkinPin"
+        maxlength="10"
+        required
+      >
+      
+      <button type="submit">Check In</button>
+    </form>
+
+    <p id="confirmation" role="status"></p>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
